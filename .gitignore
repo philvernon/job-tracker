@@ -31,5 +31,5 @@ go.work.sum
 # .idea/
 # .vscode/
 
-job.db
+jobs.db
 .DS_Store
