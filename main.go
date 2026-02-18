@@ -50,9 +50,9 @@ func main() {
 		}
 
 		job := models.Job{
+			Title:       "TestJob",
 			URL:         jobUrl,
 			Description: "This is the description for test job",
-			Title:       "TestJob",
 		}
 
 		err = jobRepo.Create(&job)
