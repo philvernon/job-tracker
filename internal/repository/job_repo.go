@@ -19,7 +19,7 @@ func (r *JobRepository) Create(job *models.Job) error {
 	VALUES (?, ?, ?)
 	`
 
-	result, err := r.DB.Exec(query, job.Title, job.URL, job.ID, job.Description)
+	result, err := r.DB.Exec(query, job.Title, job.URL, job.Description)
 
 	if err != nil {
 		return err
