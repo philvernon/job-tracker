@@ -35,7 +35,7 @@ func (r *JobRepository) Create(job *models.Job) error {
 
 func (r *JobRepository) GetAllJobs() ([]models.Job, error) {
 	query := `
-	SELECT id, url, title, description, date_added 
+	SELECT id, title, url, description, date_added 
 	FROM jobs
 	ORDER BY date_added DESC
 	`
